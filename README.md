@@ -1,2 +1,3 @@
-# deeployr-ui
-UI for Deeployr CI/CD project
+# Deeployr UI
+
+UI for [Deeployr CI/CD backend](https://github.com/Valbou/deeployr)
