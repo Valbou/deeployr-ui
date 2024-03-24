@@ -8,7 +8,7 @@ UI for [Deeployr CI/CD backend](https://github.com/Valbou/deeployr)
 ## Project Setup
 
 ```sh
-git clone 
+git clone git@github.com:Valbou/deeployr-ui.git
 cd deeployr-ui
 npm install
 ```
