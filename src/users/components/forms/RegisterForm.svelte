@@ -1,9 +1,9 @@
 <script>
-    import { register } from '../../utils/api/users/users_api.js'
-    import { UserDTO } from '../../utils/api/users/users_dto.js'
-    import { delay } from '../../utils/time.js'
+    import { register } from '../../api/users_api.js'
+    import { UserDTO } from '../../api/users_dto.js'
+    import { delay } from '@/utils/time.js'
 
-    import Toast from '../Toast.svelte'
+    import Toast from '@/lib/Toast.svelte'
 
     let user = new UserDTO('', '', '', '')
     let password2 = ''

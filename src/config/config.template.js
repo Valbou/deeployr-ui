@@ -1,5 +1,3 @@
-const env = {
-    backend_api: "https://"
+export const env = {
+    backend_api: "http"
 }
-
-export default env

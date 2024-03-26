@@ -1,13 +1,14 @@
 <script>
     import { Router, Link, Route } from 'svelte-routing';
-    import { getToken } from './store/auth.js'
+    import { getToken } from '@/users/store/auth.js'
 
-    import Deeployr from './lib/DeeployrLogo.svelte'
-    import Home from './pages/Home.svelte'
-    import Register from './pages/Register.svelte'
-    import Login from './pages/Login.svelte'
-    import MFA from './pages/MFA.svelte'
-    import Dashboard from './pages/Dashboard.svelte'
+    import Deeployr from '@/global/components/DeeployrLogo.svelte'
+    import Home from '@/global/pages/Home.svelte'
+    import Register from '@/users/pages/Register.svelte'
+    import Login from '@/users/pages/Login.svelte'
+    import MFA from '@/users/pages/MFA.svelte'
+    import Logout from '@/users/pages/Logout.svelte'
+    import Dashboard from '@/deploy/pages/Dashboard.svelte'
 
     export let url = '';
 
@@ -34,6 +35,7 @@
         <Route path='/login'><Login /></Route>
         {:else}
         <Route path='/mfa'><MFA /></Route>
+        <Route path='/logout'><Logout /></Route>
         <Route path='/dashboard'><Dashboard /></Route>
         {/if}
         <Route path="*">Not Found</Route>

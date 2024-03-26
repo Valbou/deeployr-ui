@@ -1,9 +1,9 @@
 <script>
-    import { mfa as mfaCall } from '../../utils/api/users/users_api.js'
-    import { MFADTO } from '../../utils/api/users/users_dto.js'
+    import { mfa as mfaCall } from '../../api/users_api.js'
+    import { MFADTO } from '../../api/users_dto.js'
     import { updateToken } from '../../store/auth.js'
 
-    import Toast from '../Toast.svelte'
+    import Toast from '@/lib/Toast.svelte'
 
     let mfa = new MFADTO('')
 

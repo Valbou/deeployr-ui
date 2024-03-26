@@ -1,5 +1,5 @@
 <script>
-    import LoginRequired from '../lib/LoginRequired.svelte'
+    import LoginRequired from '@/users/components/LoginRequired.svelte'
 </script>
 
 <LoginRequired />

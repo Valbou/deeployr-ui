@@ -1,5 +1,5 @@
-import { env } from '../../../config/config.js'
-import { request } from "../request.js";
+import { env } from '../../config/config.js'
+import { request } from "../../utils/api/request.js";
 
 export async function register(userDTO) {
     const url = env.backend_api + "/api/v1/users/register"
@@ -14,4 +14,9 @@ export async function authenticate(loginDTO) {
 export async function mfa(mfaDTO) {
     const url = env.backend_api + "/api/v1/users/2fa"
     return request(url, "POST", JSON.stringify(mfaDTO))
+}
+
+export async function logout() {
+    const url = env.backend_api + "/api/v1/users/logout"
+    return request(url, "POST", JSON.stringify({}))
 }

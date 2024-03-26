@@ -1,5 +1,5 @@
-import { BaseDTO } from "../base_dto.js"
-import { checks, validateEmail, minLength, maxLength, sameAs } from "../validators.js"
+import { BaseDTO } from "../../utils/api/base_dto"
+import { checks, validateEmail, minLength, maxLength, sameAs } from "../../utils/api/validators"
 
 
 export class UserDTO extends BaseDTO {
