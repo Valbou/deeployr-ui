@@ -1,8 +1,8 @@
 <script>
-    import LoginRequired from '@/users/components/LoginRequired.svelte'
+    import AuthRequired from '@/lib/iam/AuthRequired.svelte'
 </script>
 
-<LoginRequired />
+<AuthRequired />
 
 <h1>Dashboard</h1>
 

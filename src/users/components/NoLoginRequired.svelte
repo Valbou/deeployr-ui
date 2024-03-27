@@ -1,10 +1,9 @@
 <script>
     import { onMount } from 'svelte'
-    import { getToken } from '../store/auth.js'
+    import { isAuthenticated } from '../services/authService.js'
 
     onMount(() => {
-        let token = getToken()
-        if (token && token.length > 20) {
+        if (isAuthenticated()) {
             window.location.replace('/dashboard')
         }
     })

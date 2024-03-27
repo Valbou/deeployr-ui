@@ -3,7 +3,7 @@
     import { UserDTO } from '../../api/users_dto.js'
     import { delay } from '@/utils/time.js'
 
-    import Toast from '@/lib/Toast.svelte'
+    import Toast from '@/lib/components/Toast.svelte'
 
     let user = new UserDTO('', '', '', '')
     let password2 = ''

@@ -3,7 +3,7 @@
     import { MFADTO } from '../../api/users_dto.js'
     import { updateToken } from '../../store/auth.js'
 
-    import Toast from '@/lib/Toast.svelte'
+    import Toast from '@/lib/components/Toast.svelte'
 
     let mfa = new MFADTO('')
 

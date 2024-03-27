@@ -5,3 +5,4 @@
 - [x] Implement logout
 - [x] Add a 404 page (ugly)
 - [ ] Implement auto logout after token expire (after 30 minute of inactivity)
+- [ ] Manage Hosts
